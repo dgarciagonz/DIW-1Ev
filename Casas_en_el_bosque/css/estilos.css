@@ -1,0 +1,484 @@
+:root {
+    --fuente-principal: 'Pacifico';
+    --fuente-titulos: 'Cabin';
+    --fuente-alternativa: sans-serif;
+    --tam-fuente-xs: 12px;
+    --tam-fuente-sm: 13px;
+    --tam-fuente-md: 15px;
+    --tam-fuente-lg: 17px;
+    --tam-fuente-xl: 17px;
+    --tam-max-contenedor-x: 1200px;
+    --tam-alto-encabezado-xs: 8vh;
+    --negro: #000;
+    --blanco: #FFF;
+    --fondo-encabezado: #f4eee4;
+    --fondo-menu: var(--blanco);
+    --fondo-todo: var(--fondo-encabezado);
+    --color-texto: #381e0f;
+    --color-titulos-claro: #946205;
+    --color-titulos-oscuro: #381e0f;
+    --color-primario: #dd7717;
+    --color-secundario: #693707;
+    --color-opuesto-primario: #61341b;
+    --color-opuesto-secundario: #F58A03;
+    --color-enlace: var(--color-opuesto-primario);
+    --color-enlace-hover: var(--color-opuesto-secundario);
+    --color-transparencia: rgba(0, 0, 0, 0.5);
+}
+
+html {
+    font-family: var(--fuente-principal), var(--fuente-alternativa);
+    background-color: var(--fondo-todo);
+    color: var(--color-texto);
+}
+
+*,
+:after,
+:before {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#inicio,
+#nosotros,
+#contacto {
+    width: 100%;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fuente-titulos);
+}
+
+/* Media queries xs */
+
+* {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+p {
+    font-size: var(--tam-fuente-xs);
+}
+
+#inicio {
+    background-image: url(../img/pexels-mohan-reddy-14457036.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--fondo-encabezado);
+}
+
+#inicio h3 {
+    display: flex;
+    align-items: center;
+    margin: 3%;
+    width: 100%;
+}
+
+h3 img{
+    margin-right: 5%;
+}
+
+
+#inicio ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#inicio ul li {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-bottom: var(--negro) solid 2px;
+    background-color: var(--blanco);
+}
+
+#titulo2 {
+    width: 100%;
+    display: flex;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo2 h2 {
+    border: 1px solid var(--color-primario);
+    border-radius: 20px 20px 20px 20px;
+    background: var(--color-transparencia);
+    padding: 80px 30px;
+    width: 70%;
+    text-align: center;
+    color: var(--color-primario);
+}
+
+#nosotros {
+    background-image: url(../img/forest-3622519_1280.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nosotros p {
+    width: 90%;
+    margin-left: 6%;
+    font-weight: bold;
+}
+
+#nosotros img {
+    border: 1px solid #946205;
+    margin-left: 5%;
+    margin-right: 10%;
+    border-radius: 20px 20px 20px 20px;
+    height: 40vh;
+    width: 90%;
+}
+
+#modelos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 210%;
+    width: 100vw;
+    background-color: var(--fondo-encabezado);
+}
+
+#modelos h3, #modelos h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#modelos img {
+    height: 60%;
+    width: 100%;
+}
+
+#modelos p {
+    width: 90%;
+    margin-left: 6%;
+    font-weight: bold;
+}
+
+#galeria {
+    height: 250vh;
+    width: 100vw;
+    background-image: url(../img/background-72250_1280.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#galeria img {
+    border: 1px solid #946205;
+    border-radius: 20px 20px 20px 20px;
+    height: 15%;
+    width: 85vw;
+}
+
+#contacto {
+    background-image: url(../img/autumn-mood-2075302_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contacto div {
+    border: 1px solid var(--color-primario);
+    border-radius: 20px 20px 20px 20px;
+    background: var(--color-transparencia);
+    padding: 30px 30px;
+    width: 70%;
+    color: var(--blanco);
+    margin: auto;
+}
+
+#contacto h3 {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#contacto p {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#contacto input,textarea {
+    width: 100%;
+}
+
+#contacto textarea {
+    height: 20vh;
+}
+
+#volver {
+    visibility: hidden;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+  }
+  .flotante:not(.is-visible) {
+    pointer-events: none;
+    opacity: 0;
+    
+  }
+
+footer{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fondo-encabezado);
+}
+/* Media queries sm */
+
+@media (min-width: 576px) {
+
+    p{
+        font-size: var(--tam-fuente-sm);
+    }
+
+    #inicio ul li {
+        padding-top: 2%;
+        padding-bottom: 1%;
+    }
+
+    #nosotros img {
+        height: 60vh;
+        width: 90%;
+    }
+
+    #galeria {
+        height: 500vh;
+    }
+
+    #galeria img {
+        height: 80vh;
+        width: 95vw;
+    }
+}
+
+/* Media queries md */
+
+@media (min-width: 768px) {
+    
+    h2{
+        font-size: 1.5em;
+    }
+    
+    h3{
+        font-size: 1.2m;
+      }
+    p,label{
+        font-size: var(--tam-fuente-md); 
+    }
+ 
+    #header {
+        width: 100%;
+        
+    }
+
+    #inicio h3 {
+        margin:0% 3% ;        
+        width: 100%;
+    }
+
+    #inicio ul li {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    #nosotros p {
+        margin: 0;
+        width: 90vw;
+    }
+
+    #nosotros img {
+        height: 50vh;
+    }
+
+    #galeria {
+        height: 600vh;
+    }
+
+    #galeria img {
+        height: 90vh;
+        width: 90vw;
+    }
+}
+
+/* Media queries lg */
+
+@media (min-width: 992px) {
+    p,label{
+        font-size: var(--tam-fuente-lg); 
+    }
+
+    a{
+        font-size: 1.5em;
+    }
+   
+    #header {
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        flex-direction: row;
+        height: 10vh;
+    }
+
+    #inicio h3 {
+        font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+
+    #inicio ul {
+        display: inline-block;
+    }
+
+    #inicio ul li {
+        background: none;
+        display: inline-block;
+        border-bottom: none;
+        margin-left: 5%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+
+    #titulo2{
+        height: 85%;
+    }
+
+    #titulo2 h2 {
+        padding: 90px 50px;
+    }
+
+    #galeria{
+        height: 150vh;
+        flex-direction:row ;
+        flex-wrap: wrap;
+    }
+
+    #galeria h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #galeria img{
+        width: 45%;
+        height: 40vh;
+    }
+
+    #contacto div{
+        padding: 30px 80px;
+    }
+    
+}
+
+/* Media queries xl */
+
+@media (min-width: 1200px) {
+html{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: var(--color-secundario);
+}
+
+p,label{
+    font-size: var(--tam-fuente-xl); 
+}
+
+h2{
+    font-size: 4em;
+}
+
+h3{
+    font-size: 2em;
+  }
+
+#nosotros,#modelos,#galeria,footer{
+    width: 100%;
+}
+
+#nosotros{
+    height: 120vh;
+}
+
+#nosotros div{
+    width: 70%;
+}
+#nosotros h2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#nosotros p{
+    width: 100%;
+    height: 100%;
+}
+
+#nosotros img{
+    width: 90%;
+    height: 90%;   
+}
+
+#modelos{
+    flex-direction:row ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#modelos h2{
+    width: 100%;
+}
+#modelos div{
+    width: 32%;
+    height: 50vh;
+}
+
+#modelos img{
+    height: 90%;
+}
+
+.modelosTexto{
+    order:1;
+}
+
+}
